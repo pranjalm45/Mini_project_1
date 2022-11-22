@@ -115,7 +115,7 @@ hr {
   border-radius: 50px;
   margin-left: 50% !important;
   transform: translate(-50%, 0);
-  width: 500px !important;
+  width: 400px !important;
   box-shadow: 2px 5px 5px 0 rgba(0, 0, 0, 0.2);
   animation-name: showPanel;
   animation-duration: 0.5s;
