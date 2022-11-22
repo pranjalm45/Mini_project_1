@@ -95,7 +95,7 @@ else if(password==""){
   errorMessage="Password is empty";
 }
 else{
-  errorMessage="Please enter a valid email or password Note: Password must be 6 characters or above.";
+  errorMessage="Please enter a valid email or password. Make sure that password must be 6 characters or above.";
 }
 
  loadingPanel.style  ='display:none';
