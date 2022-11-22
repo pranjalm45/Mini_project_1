@@ -87,15 +87,23 @@ submitS.addEventListener('click', e => {
  // Handle Errors here.
  var errorCode = error.code;
  var errorMessage = "";
-
+ var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
  if(email==""){
   errorMessage="Email is empty";
 }
 else if(password==""){
   errorMessage="Password is empty";
 }
+else if(!email.match(validRegex))
+{
+  errorMessage="Email id is not valid."
+}
+else if(password.length<5)
+{
+  errorMessage="Password must be 6 characters or above."
+}
 else{
-  errorMessage="Please enter a valid email or password. Make sure that password must be 6 characters or above.";
+  errorMessage="User with the same email already exist";
 }
 
  loadingPanel.style  ='display:none';
