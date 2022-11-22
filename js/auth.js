@@ -98,7 +98,7 @@ else if(!email.match(validRegex))
 {
   errorMessage="Email id is not valid."
 }
-else if(password.length<5)
+else if(password.length<6)
 {
   errorMessage="Password must be 6 characters or above."
 }
